@@ -1,0 +1,178 @@
+// ArrayList :
+// -----------------------------------------------------------
+// all wrapper class used  
+
+// // homogenous data stored :
+// // used wrapper classes in java 
+// // Integer | Character | String | Byte | Short | Float | Boolean |Long | Double 
+
+// import java.util.ArrayList;
+
+// public class A {
+// public static void main(String[] args) {
+//     ArrayList<Integer>al=new ArrayList<>();
+//     ArrayList<Character>al1=new ArrayList<>();
+//     ArrayList<String>al2=new ArrayList<>();
+//     ArrayList<Byte>al3=new ArrayList<>();
+//     ArrayList<Short>al4=new ArrayList<>();
+//     ArrayList<Float>al5=new ArrayList<>();
+//     ArrayList<Boolean>al6=new ArrayList<>();
+//     ArrayList<Long>al7=new ArrayList<>();
+//     ArrayList<Double>al8=new ArrayList<>();
+    
+//     al.add(2);
+//     al1.add('a');
+//     al2.add("Hello");
+//     al3.add((byte)2);
+//     al4.add((short)2);
+//     al5.add(2.3f);
+//     al6.add(true);
+//     al7.add((long)21232);
+//     al8.add(2.345d);
+
+//     System.out.println(al);
+//     System.out.println(al1);
+//     System.out.println(al2);
+//     System.out.println(al3);
+//     System.out.println(al4);
+//     System.out.println(al5);
+//     System.out.println(al6);
+//     System.out.println(al7);
+//     System.out.println(al8);
+
+
+// }
+    
+// }
+
+// arraylist :
+// 1,2,3,4,5,6,7,8,9,10
+
+// for loop data print 
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class A {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter size");
+        int size =sc.nextInt();
+
+        ArrayList al=new ArrayList<>();
+        for(int i=0;i<size;i++){
+            System.out.println("Enter Values");
+            int a=sc.nextInt();
+            al.add(a);
+            
+        }
+        for(int i=0;i<size;i++){
+            System.out.print(al.get(i)+" ");
+        }
+
+    }
+}
+
+
+// arraylist :
+// 1,2,3,4,5,6,7,8,9,10
+
+// for loop data print 
+// even number 
+// odd number 
+// count 
+// sum even
+// sum odd
+// Armstrong number :151,152,153,154 
+// palindrome number : 12321,456, 5678,16761
+// factorial :1,2,3,4,5 
+// neon number check : 9,5,2,1 
+// prime number 
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter size");
+        int size =sc.nextInt();
+
+        ArrayList<Integer> al=new ArrayList<>();
+        for(int i=0;i<size;i++){
+            System.out.println("Enter Values");
+            int a=sc.nextInt();
+            al.add(a);
+            
+        }
+
+        //print
+        for(int i=0;i<size;i++){
+            System.out.print(al.get(i));
+        }
+        System.out.println(" ");
+
+        //even number
+        for(int i=0;i<size;i++){
+           if(al.get(i)%2==0){
+            System.out.print(al.get(i)+" ");
+           }
+        }
+
+        System.out.println(" ");
+
+        // odd number 
+        for(int i=0;i<size;i++){
+            if(al.get(i)%2!=0){
+                System.out.print(al.get(i)+" ");
+            }
+        }
+
+        System.out.println(" ");
+
+        // sum even
+        int sum=0;
+        for(int i=0;i<size;i++){
+            if(al.get(i)%2==0){
+            
+            sum =sum+al.get(i);
+            
+            }
+            
+        }
+System.out.print(sum);
+        System.out.println(" ");
+
+        // ODD sum
+        int sum1=0;
+        for(int i=0;i<size;i++){
+            if(al.get(i)%2!=0){
+                sum1=sum1+al.get(i);
+            }
+        }
+        System.out.print(sum1);
+        System.out.println(" ");
+
+        //Armstrong
+        
+        for(int i=0;i<size;i++){
+            int num=al.get(i);
+            int sum2=0;
+            int rem;
+            int temp=num;
+            while(num>0){
+            rem=num%10;
+            sum=sum+rem*rem*rem;
+            num=num/10;
+            }
+            System.out.println(sum);
+            if(temp==sum){
+                System.out.println("Number is Armstrong");
+            }
+            else{
+                System.out.println("Not armstong");
+            }
+        }
+
+    }
+}

@@ -1,0 +1,64 @@
+//Array List 1st assignment
+
+// // // ArrayList :
+
+// // // heterogenous data stored 
+
+// // import java.util.ArrayList;
+
+// // public class A {
+
+// //     public static void main(String[] args) {
+// //         ArrayList al=new ArrayList<>();
+// //         al.add(1);
+// //         al.add("Hello");
+// //         al.add(2.3f);
+// //         System.out.println(al);
+// //     }
+// // }
+
+// // -----------------------------------------------------
+// // ArrayList :
+
+// // homogenous data stored :
+// // used wrapper classes in java 
+// // Integer | Character | String | Byte | Short | Float | Boolean |Long | Double 
+
+// import java.util.ArrayList;
+
+// public class A {
+// public static void main(String[] args) {
+//     ArrayList<Integer>al=new ArrayList<>();
+//     ArrayList<Character>al1=new ArrayList<>();
+//     ArrayList<String>al2=new ArrayList<>();
+//     ArrayList<Byte>al3=new ArrayList<>();
+//     ArrayList<Short>al4=new ArrayList<>();
+//     ArrayList<Float>al5=new ArrayList<>();
+//     ArrayList<Boolean>al6=new ArrayList<>();
+//     ArrayList<Long>al7=new ArrayList<>();
+//     ArrayList<Double>al8=new ArrayList<>();
+    
+//     al.add(2);
+//     al1.add('a');
+//     al2.add("Hello");
+//     al3.add((byte)2);
+//     al4.add((short)2);
+//     al5.add(2.3f);
+//     al6.add(true);
+//     al7.add((long)21232);
+//     al8.add(2.345d);
+
+//     System.out.println(al);
+//     System.out.println(al1);
+//     System.out.println(al2);
+//     System.out.println(al3);
+//     System.out.println(al4);
+//     System.out.println(al5);
+//     System.out.println(al6);
+//     System.out.println(al7);
+//     System.out.println(al8);
+
+
+// }
+    
+// }
