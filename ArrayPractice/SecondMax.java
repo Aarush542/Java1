@@ -1,4 +1,4 @@
-class Main{
+class SecondMax{
     public static void main(String[] args) {
         int a[]={1,1,1,2,2,2,8,8,8,4,4,7,8,3,5};
         int max=a[0];
