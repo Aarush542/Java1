@@ -21,7 +21,6 @@ System.out.println(a);
 
         System.out.println(c);
 
-        int dup=c.get(0);
         for(int i=0;i<c.size();i++){
             for(int j=i+1;j<c.size();j++){
                 if(c.get(i)==c.get(j)){
